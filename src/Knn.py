@@ -1,8 +1,10 @@
 import numpy as np
-import warnings
+# import warnings
 from collections import Counter
 
-def KNN(data, labels, predict , k=3):
+def KNN(data, labels, predict , k=10):
+#     if k < len(data):
+#         warnings.warn("K is less than the number of the classes !!!!")
 
     values = []
     index = 0
@@ -20,9 +22,6 @@ def KNN(data, labels, predict , k=3):
 
 
 def Get_Euclidian_Dis(data, labels, predict):
-    if k < len(data):
-        warnings.warn("K is less than the number of the classes !!!!")
-
     values = []
     index = 0
     for folds in data : 
